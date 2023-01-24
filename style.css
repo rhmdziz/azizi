@@ -327,19 +327,16 @@ footer .credits {
 }
 
 
-
-
-
-
-
-
 /* RESPOMSIVE */
-
 /* TAB */
-@media (max-width: 750px) {
+@media (max-width: 768px) {
     html {
         font-size: 85%;
     }
+    .desc {
+        font-size: 100%;
+    }
+    
     #menu {
         display: inline-block;
     }
@@ -396,13 +393,11 @@ footer .credits {
     
 }
 
-/* Mobile */
-@media (max-width: 450px) {
+@media (max-width: 578px) {
     html {
-        font-size: 70%;
+        font-size: 75%;
     }
 }
-
 
 
 
