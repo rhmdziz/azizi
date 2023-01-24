@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Azizi.</title>
+		<link rel="stylesheet" href="../style.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+		<script src="https://unpkg.com/feather-icons"></script>
+        <style>
+            body {
+                margin: 0 auto;
+                font-family: var(--fontComic);
+                height: 100vh;
+                display: flex;
+                align-items: center;
+            }
+            .container img {
+                display: flex;
+                width: 18rem;
+                height: 18rem;
+            }
+            h1, p {
+                text-align: center;
+            }
+            h1 {
+                /* padding-top: 4rem; */
+                padding-bottom: 2rem;
+
+            }
+            .text {
+                padding-top: 1rem;
+                font-size: 1.2rem;
+            }
+
+            .none {
+                display: none;
+                visibility: hidden;
+            }
+            .active {
+                display: block;
+                visibility: visible;
+            }
+            .option {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+	</head>
+    <body>
+        <audio id="audio">
+            <source src="../img/buatkm/if.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+          
+        <div class="container">
+
+            <h1>nih buat km</h1>
+            <a href="#ini">
+                <div class="haha">
+                    <img src="../img/buatkm/profile.jpeg" alt="" class="nih">
+                </div>
+                <div class="wkwk none">
+                    <img src="../img/buatkm/wkwk.jpeg">
+                </div>
+                <div class="hehe none">
+                    <img src="../img/buatkm/hehe.jpeg">
+                </div>
+            </a>
+            <br>
+            <div class="option none">
+                <div>
+
+                    <button>Mw</button>
+                    <button>Gmw</button>
+                </div>
+            </div>
+            <div class="text">
+                <p id="line1"></p>
+                <p id="line2"></p>
+                <br>
+                <p id="line3"></p>
+             </div>
+            
+        </div>
+        <script>
+			feather.replace()
+		</script>
+        <script>
+            const haha = document.querySelector('.haha');
+            const wkwk = document.querySelector('.wkwk');
+            const hehe = document.querySelector('.hehe');
+            const option = document.querySelector('.option');
+            const ini = document.querySelector('#ini');
+            const audio = document.getElementById('audio');
+            haha.onclick = () => {
+                haha.classList.toggle('none')
+                wkwk.classList.remove('none');
+                wkwk.classList.toggle('active');
+            };
+            wkwk.onclick = () => {
+                wkwk.classList.remove('active')
+                wkwk.classList.toggle('none')
+
+                hehe.classList.remove('none');
+                option.classList.remove('none');
+                hehe.classList.toggle('active');
+                audio.play()
+                
+            };
+
+            var text1 = "terima kasih hari-harinya!";
+            var text2 = "semoga km sehat selalu dan kemudahan menyertaimu";
+            var text3 = "maniezz :)"
+
+            var i = 0;
+            var speed = 70; //kecepatan typing dalam miliseconds
+            
+            function typeWriter1() {
+              if (i < text1.length) {
+                document.getElementById("line1").innerHTML += text1.charAt(i);
+                i++;
+                setTimeout(typeWriter1, speed);
+              }
+            }
+            typeWriter1();
+          
+            var j = 0;
+            function typeWriter2() {
+              if (j < text2.length) {
+                document.getElementById("line2").innerHTML += text2.charAt(j);
+                j++;
+                setTimeout(typeWriter2, speed);
+              }
+            }
+            setTimeout(typeWriter2,3000) // delay before start typing on line 2
+            var k = 0;
+            function typeWriter3() {
+              if (k < text3.length) {
+                document.getElementById("line3").innerHTML += text3.charAt(k);
+                k++;
+                setTimeout(typeWriter3, speed);
+              }
+            }
+            setTimeout(typeWriter3,8000) // delay before start typing on line 2
+          </script>
+          
+          
+		<script src="../script.js"></script>
+    </body>
+</html>
