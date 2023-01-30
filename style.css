@@ -17,6 +17,7 @@
     --bgPrime: #fbfbfb;
     --bgSecond: #f6f6ff;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -285,7 +286,7 @@ textarea {
     padding: 0.4rem 1rem;
     font-family: var(--fontPrime);
     cursor: pointer;
-    color: var(--colorPrime);
+    color: var(--coorPrime);
     font-size: 1rem;
 }
 .button:hover {
@@ -293,6 +294,40 @@ textarea {
     background-color: var(--colorPrime);
 }
 
+.thanks {
+    /* border: 1px solid var(--bgPrime); */
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    padding: 0.4rem 0rem;
+    background-color: var(--colorAcsent);
+    color: var(--bgPrime);
+    font-size: 0.8rem;
+}
+.thanks p {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.thanks button {
+    padding-right: 1rem;
+    margin: 0;
+    border: none;
+    /* padding-right: 1rem; */
+    background-color: var(--colorAcsent);
+    color: var(--bgPrime);
+}
+.thanks button:hover {
+    color: var(--bgSecond);
+    cursor: pointer;
+}
+
+.dNone {
+    display: none;
+}
+.dActive {
+    display: block;
+}
 
 
 
