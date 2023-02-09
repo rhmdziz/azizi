@@ -14,8 +14,8 @@
     --colorSecond: #666;
     --colorAcsent: #15578d;
     --bgSecondTrans: rgba(240, 240, 240, 0.8);
-    --bgPrime: #fbfbfb;
-    --bgSecond: #f6f6ff;
+    --bgPrime: #fafafa;
+    --bgSecond: #f6f6f6;
 }
 
 html {
@@ -322,6 +322,8 @@ textarea {
     cursor: pointer;
 }
 
+
+
 .dNone {
     display: none;
 }
@@ -346,7 +348,7 @@ footer {
     text-align: center;
     padding: 3rem 0 1rem 0;
     background-color: var(--colorPrime);
-    color: var(--bgPrime);
+    color: #fefefe;
     font-size: 1rem;
 }
 footer .links {
@@ -449,6 +451,17 @@ footer .credits {
     li {
         font-size: 1.2rem;
     }
+    .contact {
+        font-size: 16px;
+    }
+    input, textarea {
+        font-size: 16px;
+        padding: 1.4rem 0;
+    }
+    .button {
+        font-size: 16px;        
+    }
+
 }
 
 
