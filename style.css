@@ -422,9 +422,6 @@ footer .credits {
         padding: 1rem 0;
         margin-top: 1rem;
     }
-    .intern {
-        display: block;
-    }
     
 }
 
@@ -454,12 +451,18 @@ footer .credits {
     .contact {
         font-size: 16px;
     }
+    form {
+        margin: 4rem 0;
+    }
     input, textarea {
         font-size: 16px;
         padding: 1.4rem 0;
     }
     .button {
         font-size: 16px;        
+    }
+    .space {
+        margin: 2rem 0;
     }
 
 }
